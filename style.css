@@ -1,0 +1,127 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.shopping,
+.shopping td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+.shopping td {
+    width: 4rem;
+    height: 1.5rem;
+}
+
+.shopping thead td:nth-of-type(2) {
+    width: 10rem;
+}
+
+.shopping td:nth-of-type(3) {
+    text-align: center;
+}
+
+.shopping td:nth-of-type(1),
+.shopping td:nth-of-type(2) {
+    padding-left: 0.3rem;
+}
+
+.shopping td:nth-of-type(4),
+td:nth-of-type(5) {
+    text-align: right;
+    padding-right: 0.3rem;
+}
+
+.shopping tfoot td {
+    text-align: right;
+}
+
+.shopping tfoot td:nth-of-type(1),
+.shopping tfoot td:nth-of-type(2) {
+    padding-right: 0.3rem;
+}
+
+.shopping thead,
+.shopping tfoot {
+    background-color: rgb(68, 67, 67);
+    color: white;
+}
+
+.shopping tbody tr:nth-child(odd) {
+    background-color: rgb(183, 177, 177);
+}
+
+.shopping tbody tr:nth-child(even) {
+    background-color: rgb(231, 226, 226);
+}
+
+.shopping tbody td:last-of-type {
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.shopping tbody tr:hover {
+    background-color: rgb(48, 131, 81);
+}
+
+.shopping td div:nth-of-type(1)::before {
+    content: "\f044";
+    font: var(--fa-font-solid);
+
+}
+
+.shopping td div:nth-of-type(2)::after {
+    content: "\f2ed";
+    font: var(--fa-font-solid);
+}
+
+.unit {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: right;
+}
+
+.buttons #shop,
+#pay {
+    display: flex;
+    background-color: orangered;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+}
+
+#shop:hover,
+#pay:hover {
+    background-color: rgb(48, 131, 81);
+}
+
+.buttons #shop a:first-of-type::before {
+    content: "\f07a";
+    font: var(--fa-font-solid);
+    color: black;
+}
+
+.buttons #pay a:first-of-type::before {
+    content: "\f53d";
+    font: var(--fa-font-solid);
+    color: black;
+}
+
+.buttons a:nth-of-type(even) {
+    color: white;
+}
